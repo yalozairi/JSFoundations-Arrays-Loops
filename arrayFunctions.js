@@ -49,7 +49,9 @@ function getDuplicateCount(x, numbers) {
  * youGottaCalmDown("Taylor Schwifting!!!!!!!!!!!") -> "Taylor Shwifting!"
  * youGottaCalmDown("Hellooooo") -> "Hellooooo"
  *
- * Hint: Use string method .slice()
+ * Hint:
+ * - Use string method .slice()
+ * - Use string method .endsWith()
  */
 function youGottaCalmDown(s) {
   // Your code here
