@@ -1,7 +1,7 @@
 /**
  * getOdds(numbers):
  * - receives an array of numbers called `numbers`
- * - filters the `numbers` array and...
+ * - filters the `numbers` array in order to...
  * - returns an array of only ODD numbers.
  *
  * e.g.
@@ -15,7 +15,7 @@ function getOdds(numbers) {
 /**
  * getEvens(numbers):
  * - receives an array of numbers called `numbers`
- * - filters the `numbers` array and...
+ * - filters the `numbers` array in order to...
  * - returns an array of only EVEN numbers.
  *
  * e.g.
