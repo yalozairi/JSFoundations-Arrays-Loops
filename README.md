@@ -10,6 +10,8 @@
 $ git clone https://github.com/<your_username>/JSFoundations-Arrays-Loops.git
 ```
 
+(REVIEW: same comment.. add the steps of how they can run the functions to know if their code is working)
+
 #### Running The Tests
 
 Install all the requirements:
