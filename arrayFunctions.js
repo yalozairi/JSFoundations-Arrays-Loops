@@ -9,8 +9,19 @@
  * getOdds([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [11, 35, 601, 777, 999]
  */
 function getOdds(numbers) {
-  // Your code here
+  let oddArray = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 1) {
+      oddArray.push(numbers[i]);
+      // } else if (numbers[i] % 2 === 0) {
+      //   console.log(`${numbers[i]}`);
+      // }
+    }
+  }
+  //return numbers.slice(getOdds())
+  return oddArray;
 }
+console.log(getOdds([2, 3, 5, 6, 2, 10]));
 
 /**
  * getEvens(numbers):
@@ -23,8 +34,15 @@ function getOdds(numbers) {
  * getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [52, 14, 56, 888]
  */
 function getEvens(numbers) {
-  // Your code here
+  let evenArray = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      evenArray.push(numbers[i]);
+    }
+  }
+  return evenArray;
 }
+console.log(getEvens([2, 3, 5, 6, 2, 10]));
 
 /**
  * getDuplicateCount(x, numbers):
@@ -36,8 +54,15 @@ function getEvens(numbers) {
  * getDuplicateCount(52, [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52]) -> 3
  */
 function getDuplicateCount(x, numbers) {
-  // Your code here
+  let duplicates = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] === x) {
+      duplicates++;
+    }
+  }
+  return duplicates;
 }
+console.log(getDuplicateCount(3, [1, 2, 3, 3, 4, 3, 5, 3, 7, 3]));
 
 /**
  * youGottaCalmDown(s):
@@ -53,8 +78,19 @@ function getDuplicateCount(x, numbers) {
  * - Use string method .slice()
  * - Use string method .endsWith()
  */
+
 function youGottaCalmDown(s) {
-  // Your code here
+  let slice = 0;
+  let slicedArray = s;
+  while (slicedArray.endsWith(`!!`) === true) {
+    slice = slice - 1;
+    slicedArray = s.slice(0, slice);
+  }
+  return slicedArray;
 }
+
+console.log(youGottaCalmDown("I HATE YOU!!!!!!!!"));
+console.log(youGottaCalmDown("You're Cool!"));
+console.log(youGottaCalmDown("I Love You"));
 
 module.exports = { getOdds, getEvens, getDuplicateCount, youGottaCalmDown };
